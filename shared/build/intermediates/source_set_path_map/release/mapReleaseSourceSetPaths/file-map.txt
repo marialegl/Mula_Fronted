@@ -1,0 +1,9 @@
+com.example.shared-pngs-0 C:\Users\JOHN\Mula_Fronted\shared\build\generated\res\pngs\release
+com.example.shared-resValues-1 C:\Users\JOHN\Mula_Fronted\shared\build\generated\res\resValues\release
+com.example.shared-mergeReleaseResources-2 C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.shared-mergeReleaseResources-3 C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.shared-release-4 C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.shared-androidMain-5 C:\Users\JOHN\Mula_Fronted\shared\src\androidMain\res
+com.example.shared-androidRelease-6 C:\Users\JOHN\Mula_Fronted\shared\src\androidRelease\res
+com.example.shared-main-7 C:\Users\JOHN\Mula_Fronted\shared\src\main\res
+com.example.shared-release-8 C:\Users\JOHN\Mula_Fronted\shared\src\release\res

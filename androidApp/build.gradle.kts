@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace = "com.malejadev.lamulaappc"
-    compileSdk = 30
+    compileSdk = 34
     buildToolsVersion = "34.0.0"
     defaultConfig {
         applicationId = "com.malejadev.lamulaappc"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

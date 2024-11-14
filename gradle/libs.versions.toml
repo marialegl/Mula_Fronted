@@ -1,6 +1,6 @@
 [versions]
 # Definición de versiones
-agp = "8.6.1"                  # Android Gradle Plugin (AGP)
+agp = "8.5.2"                  # Android Gradle Plugin (AGP)
 kotlin = "2.0.21"              # Versión de Kotlin
 compose = "1.7.5"              # Jetpack Compose
 compose-compiler = "1.5.3"     # Versión del compilador de Compose
@@ -9,7 +9,7 @@ androidx-activityCompose = "1.9.3"  # Activity Compose
 kotlinMultiplatform = "1.8.0"  # Kotlin Multiplatform
 androidLibrary = "8.0.0"       # Android Library Plugin
 android.compileSdk = "33"
-android.minSdk = "21"
+android.minSdk = "23"
 
 # Librerías
 coreKtx = "1.15.0"

@@ -14,7 +14,7 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-
+    android()
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -29,12 +29,12 @@ kotlin {
 
 android {
     namespace = "com.example.shared"
-    compileSdk = 30
+    compileSdk = 34
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
     }
 }
