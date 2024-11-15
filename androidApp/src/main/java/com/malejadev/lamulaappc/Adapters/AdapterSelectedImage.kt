@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.malejadev.lamulaappc.Models.SelectedImageModel
 import com.malejadev.lamulaappc.R
+import androidx.databinding.DataBindingUtil
 import com.malejadev.lamulaappc.databinding.ItemSelectedImagesBinding
 
 class AdapterSelectedImage (

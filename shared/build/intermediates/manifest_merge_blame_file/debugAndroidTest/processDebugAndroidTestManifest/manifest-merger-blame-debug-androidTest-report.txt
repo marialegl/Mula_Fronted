@@ -3,32 +3,32 @@
 3    package="com.example.shared.test" >
 4
 5    <uses-sdk
-5-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:5:5-74
-6        android:minSdkVersion="21"
-6-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:5:15-41
-7        android:targetSdkVersion="21" />
-7-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:5:42-71
+5-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:5:5-74
+6        android:minSdkVersion="23"
+6-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:5:15-41
+7        android:targetSdkVersion="23" />
+7-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:11:5-15:73
+9-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:11:5-15:73
 10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:11:22-75
+10-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:11:22-75
 11        android:functionalTest="false"
-11-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:14:22-52
+11-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:13:22-53
+12-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:13:22-53
 13        android:label="Tests for com.example.shared.test"
-13-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:15:22-71
+13-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:15:22-71
 14        android:targetPackage="com.example.shared.test" />
-14-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:12:22-69
+14-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:12:22-69
 15
 16    <application
-16-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:7:5-9:19
+16-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:7:5-9:19
 17        android:debuggable="true"
-18        android:extractNativeLibs="true" >
+18        android:extractNativeLibs="false" >
 19        <uses-library android:name="android.test.runner" />
-19-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:8:9-60
-19-->C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10794039271945730804.xml:8:23-57
+19-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:8:9-60
+19-->/Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest2805683782698494220.xml:8:23-57
 20    </application>
 21
 22</manifest>

@@ -1,17 +1,14 @@
 [versions]
 # Definición de versiones
 agp = "8.5.2"                  # Android Gradle Plugin (AGP)
-kotlin = "2.0.21"              # Versión de Kotlin
 compose = "1.7.5"              # Jetpack Compose
 compose-compiler = "1.5.3"     # Versión del compilador de Compose
 compose-material3 = "1.3.1"    # Material 3 para Compose
 androidx-activityCompose = "1.9.3"  # Activity Compose
-kotlinMultiplatform = "1.8.0"  # Kotlin Multiplatform
-androidLibrary = "8.0.0"       # Android Library Plugin
-android.compileSdk = "33"
+android.compileSdk = "35"
 android.minSdk = "23"
-
-# Librerías
+kotlin = "2.0.21"
+kotlinGradlePlugin = "1.9.22"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -27,9 +24,11 @@ firebaseAuthKtx = "23.1.0"
 firebaseDatabaseV = "21.0.0"
 imagePickerV = "2.1"
 glideV = "4.16.0"
+databindingRuntime = "8.7.2"
 
 [libraries]
 # Definición de dependencias
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
@@ -43,6 +42,8 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-cinterop = { module = "org.jetbrains.kotlinx:kotlinx-cinterop" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
@@ -52,13 +53,14 @@ firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx",
 firebaseDatabase = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabaseV" }
 imagePicker = { group = "com.github.dhaval2404", name = "imagepicker", version.ref = "imagePickerV" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideV" }
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
 
 [plugins]
 # Definición de plugins
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 googleService = { id = "com.google.gms.google-services", version.ref = "googleServiceV" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidApplication = { id = "com.android.application", version.ref = "agp"}
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

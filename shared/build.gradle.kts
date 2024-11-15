@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -7,34 +8,67 @@ plugins {
 }
 
 kotlin {
-
+    // Configuración para Android y los targets específicos de iOS
     androidTarget {
-        @OptIn(ExperimentalKotlinGradlePluginApi::class)
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_11)
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "1.8"
+            }
         }
     }
-    android()
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
+
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+        ).forEach {
+            it.binaries.framework {
+                baseName = "shared"
+                isStatic = true
+            }
+        }
 
 
-    sourceSets {
-        commonMain.dependencies {
-            // put your Multiplatform dependencies here
+        sourceSets {
+
+            val commonMain by getting {
+                dependencies {
+                    implementation(libs.kotlinx.coroutines.core)
+                }
+            }
+            val commonTest by getting {
+                dependencies {
+                    implementation(kotlin("test"))
+                }
+            }
+            // Fuente específica para iOS
+            val iosMain by creating {
+                dependsOn(commonMain)
+                dependencies {
+                    // Dependencias específicas de iOS
+                }
+            }
+            val iosTest by creating {
+                dependsOn(commonTest)
+
+            }
+            val iosMain by getting {
+                dependsOn(commonMain)
+            }
+            val iosTest by getting {
+                dependsOn(commonTest)
+            }
         }
     }
-}
 
 android {
-    namespace = "com.example.shared"
+    namespace = "com.malejadev.shared"
     compileSdk = 34
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
     defaultConfig {
-        minSdk = 23
+        minSdk = 24
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
