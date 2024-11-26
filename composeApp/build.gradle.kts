@@ -36,7 +36,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(allprojects.shared)
+            implementation(project(":shared"))
             implementation(libs.kotlinx.serialization.core)
         }
     }
