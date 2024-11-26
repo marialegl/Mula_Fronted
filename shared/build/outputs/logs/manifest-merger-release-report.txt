@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml:2:13-83
-INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml:2:13-83
+ADDED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml:2:13-83
+INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml:2:13-83
 	package
-		INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml
+		INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml
 	xmlns:android
-		ADDED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml:2:23-81
+		ADDED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml:2:23-81
 uses-sdk
-INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml reason: use-sdk injection requested
-INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml
-INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml
+INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml reason: use-sdk injection requested
+INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml
+INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml
+		INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\JOHN\Mula_Fronted\shared\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3265334409851002964.xml
+		INJECTED from /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14692597224644652102.xml

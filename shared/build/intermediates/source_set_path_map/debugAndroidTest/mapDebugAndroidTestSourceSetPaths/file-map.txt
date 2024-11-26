@@ -1,5 +1,0 @@
-com.example.shared.test.shared-androidTest-0 /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/generated/res/resValues/androidTest/debug
-com.example.shared.test.shared-mergeDebugAndroidTestResources-1 /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.shared.test.shared-mergeDebugAndroidTestResources-2 /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.shared.test.shared-debugAndroidTest-3 /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
-com.example.shared.test.shared-debug-4 /Users/julioluque/StudioProjects/Mula_Fronted/shared/build/intermediates/packaged_res/debug/packageDebugResources

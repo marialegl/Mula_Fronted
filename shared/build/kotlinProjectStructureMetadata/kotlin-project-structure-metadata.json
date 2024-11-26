@@ -62,7 +62,14 @@
           "nativeMain"
         ],
         "moduleDependency": [
-          "org.jetbrains.kotlin:kotlin-stdlib"
+          "com.rickclephas.kmp:kmp-observableviewmodel-core",
+          "org.jetbrains.kotlin:kotlin-stdlib",
+          "com.rickclephas.kmp:kmp-nativecoroutines-core",
+          "com.rickclephas.kmp:kmp-nativecoroutines-annotations",
+          "io.ktor:ktor-client-core",
+          "io.ktor:ktor-client-content-negotiation",
+          "io.ktor:ktor-serialization-kotlinx-json",
+          "io.insert-koin:koin-core"
         ],
         "sourceSetCInteropMetadataDirectory": "appleMain-cinterop",
         "binaryLayout": "klib",
@@ -72,6 +79,7 @@
         "name": "commonMain",
         "dependsOn": [],
         "moduleDependency": [
+          "com.rickclephas.kmp:kmp-observableviewmodel-core",
           "org.jetbrains.kotlin:kotlin-stdlib"
         ],
         "binaryLayout": "klib"
@@ -82,7 +90,15 @@
           "appleMain"
         ],
         "moduleDependency": [
-          "org.jetbrains.kotlin:kotlin-stdlib"
+          "com.rickclephas.kmp:kmp-observableviewmodel-core",
+          "org.jetbrains.kotlin:kotlin-stdlib",
+          "com.rickclephas.kmp:kmp-nativecoroutines-core",
+          "com.rickclephas.kmp:kmp-nativecoroutines-annotations",
+          "io.ktor:ktor-client-core",
+          "io.ktor:ktor-client-content-negotiation",
+          "io.ktor:ktor-serialization-kotlinx-json",
+          "io.insert-koin:koin-core",
+          "io.ktor:ktor-client-darwin"
         ],
         "sourceSetCInteropMetadataDirectory": "iosMain-cinterop",
         "binaryLayout": "klib",
@@ -94,7 +110,14 @@
           "commonMain"
         ],
         "moduleDependency": [
-          "org.jetbrains.kotlin:kotlin-stdlib"
+          "com.rickclephas.kmp:kmp-observableviewmodel-core",
+          "org.jetbrains.kotlin:kotlin-stdlib",
+          "com.rickclephas.kmp:kmp-nativecoroutines-core",
+          "com.rickclephas.kmp:kmp-nativecoroutines-annotations",
+          "io.ktor:ktor-client-core",
+          "io.ktor:ktor-client-content-negotiation",
+          "io.ktor:ktor-serialization-kotlinx-json",
+          "io.insert-koin:koin-core"
         ],
         "sourceSetCInteropMetadataDirectory": "nativeMain-cinterop",
         "binaryLayout": "klib",

@@ -1,19 +1,33 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.kmpNativeCoroutines)
+    kotlin("native.cocoapods")
 }
 
 kotlin {
-    // Configuración para Android y los targets específicos de iOS
+    cocoapods {
+        // Configuración del framework para Cocoapods
+        version = "1.16.2"
+        summary = "Descripción del módulo shared"
+        homepage = "https://tu-proyecto.com"
+        ios.deploymentTarget = "14.1"
+        podfile = project.file("../iosApp/Podfile") // Ruta al Podfile del proyecto iOS
+        framework {
+            baseName = "Shared"
+        }
+    }
+
+
     androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
         }
     }
 
@@ -21,54 +35,60 @@ kotlin {
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
-        ).forEach {
-            it.binaries.framework {
-                baseName = "shared"
-                isStatic = true
-            }
-        }
-
-
-        sourceSets {
-
-            val commonMain by getting {
-                dependencies {
-                    implementation(libs.kotlinx.coroutines.core)
-                }
-            }
-            val commonTest by getting {
-                dependencies {
-                    implementation(kotlin("test"))
-                }
-            }
-            // Fuente específica para iOS
-            val iosMain by creating {
-                dependsOn(commonMain)
-                dependencies {
-                    // Dependencias específicas de iOS
-                }
-            }
-            val iosTest by creating {
-                dependsOn(commonTest)
-
-            }
-            val iosMain by getting {
-                dependsOn(commonMain)
-            }
-            val iosTest by getting {
-                dependsOn(commonTest)
-            }
+    ).forEach { iosTarget ->
+        iosTarget.binaries.framework {
+            baseName = "Shared"
+            isStatic = true
         }
     }
 
+    sourceSets {
+        androidMain.dependencies {
+            implementation(libs.ktor.client.okhttp)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+        }
+        commonMain.dependencies {
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.koin.core)
+            api(libs.kmp.observable.viewmodel)
+        }
+
+        // Required by KMM-ViewModel
+        all {
+            languageSettings.optIn("kotlinx.cinterop.ExperimentalForeignApi")
+            languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
+        }
+    }
+}
+
 android {
-    namespace = "com.malejadev.shared"
-    compileSdk = 34
+    namespace = "com.jetbrains.kmpapp.shared"
+    compileSdk = 35
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
     defaultConfig {
         minSdk = 24
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+}
+tasks.register("setupSharedSourceSets") {
+    doLast {
+        val sharedSrc = file("src")
+        listOf(
+            "commonMain/kotlin",
+            "commonMain/resources",
+            "androidMain/kotlin",
+            "iosMain/kotlin",
+            "iosMain/resources"
+        ).forEach {
+            file("$sharedSrc/$it").mkdirs()
+        }
+        println("Carpetas de código compartido creadas correctamente.")
     }
+    notCompatibleWithConfigurationCache("Esta tarea modifica el sistema de archivos.")
 }
